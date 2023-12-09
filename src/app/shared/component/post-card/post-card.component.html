@@ -1,0 +1,14 @@
+
+    <mat-card class="mb-4 bg-info" >
+        <mat-card-title>
+        {{postarr.title}}
+        </mat-card-title>
+        <mat-card-content>
+            {{postarr.body}}
+        </mat-card-content>
+        <mat-card-actions  class="d-flex justify-content-between">
+            <button mat-raised-button color="accent" (click)="oneditbtn()">edit</button>
+            <button mat-raised-button color="warn" (click)="onrmove()">Delete</button>
+        </mat-card-actions>
+    </mat-card>
+

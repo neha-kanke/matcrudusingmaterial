@@ -1,0 +1,13 @@
+
+        <h1 class="text-center">
+            Add posts
+            <button mat-mini-fab color="accent"(click)="onaddpost()">
+                <mat-icon>add</mat-icon>
+            </button>
+        </h1>
+            <app-post-card (emitdata)="oneditpatchdata($event)" [postarr]="post"
+                *ngFor="let post of postarry"(deleteid)="onremovepost($event)"></app-post-card>
+     
+
+
+
